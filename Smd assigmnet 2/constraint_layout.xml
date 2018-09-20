@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RadioGroup
+        android:id="@+id/Radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@android:dimen/app_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Checkbox"
+       >
+
+        <RadioButton
+            android:id="@+id/Radio12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            />
+         <RadioButton
+        android:id="@+id/Radio22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        />
+    <RadioButton
+        android:id="@+id/Radio32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neutral"
+        />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/Checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="90dp"
+        android:text="Terms and Conditions"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Checkbox" />
+
+       <TextView
+           android:id="@+id/Txtview12"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginBottom="10dp"
+           android:text="Gender: "
+           android:textSize="16sp"
+           android:textAlignment="center"
+           android:textStyle="bold"
+
+           app:layout_constraintBottom_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/Radiogroup" />
+
+
+     <EditText
+         android:id="@+id/EiditTxtview12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginEnd="10dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginBottom="10dp"
+         android:ems="10"
+         android:hint="Email"
+         android:inputType="textEmailAddress"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintVertical_bias="0.6"
+         app:layout_constraintBottom_toTopOf="@+id/EiditTxtview22"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+    />
+
+
+    <EditText
+        android:id="@+id/EiditTxtview22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Password: "
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toTopOf="@+id/Txtview12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
